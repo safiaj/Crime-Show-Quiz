@@ -82,7 +82,7 @@ function loadQuestion() {
     });
 }
 
-// Function to check answer
+// Function to check answer and allow access to the next question in the quiz set 
 function checkAnswer() {
     const selectedOption = document.querySelector('input[name="answer"]:checked');
     if (!selectedOption) {
@@ -102,4 +102,11 @@ function checkAnswer() {
     } else {
         showResult();
     }
+}
+
+// Function to show result
+function showResult() {
+    questionContainer.innerHTML = "";
+    submitButton.style.display = "none";
+    resultContainer.innerHTML = `Your score: ${score}/${quizData.length}`;
 }
