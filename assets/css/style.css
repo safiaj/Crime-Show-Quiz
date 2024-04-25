@@ -79,43 +79,99 @@ h1 {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    background-color: #a6a83c; 
+    background-color: #a6a83c;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(177, 207, 23, 0.3); 
-  }
+    box-shadow: 0 0 10px rgba(177, 207, 23, 0.3);
+}
 
-  /* Add margin below the title */
-  .instructions-title {
-    margin-bottom: 30px; 
-  }
+/* Add margin below the title */
+.instructions-title {
+    margin-bottom: 30px;
+}
 
-  /* Add margin below each paragraph */
-  .instructions-container p {
-    margin-bottom: 20px; 
-  }
+/* Add margin below each paragraph */
+.instructions-container p {
+    margin-bottom: 20px;
+}
 
-  /* Add margin below the ordered list */
-  .instructions-container ol {
-    margin-bottom: 30px; 
-  }
-  
-  h1 {
+/* Add margin below the ordered list */
+.instructions-container ol {
+    margin-bottom: 30px;
+}
+
+h1 {
     color: #333;
-  }
-  
-  .start-button {
+}
+
+.start-button {
     display: block;
-    width: fit-content; 
-    margin: 20px auto 0; 
+    width: fit-content;
+    margin: 20px auto 0;
     padding: 10px 20px;
     background-color: #d0ff00;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 20px;
-  }
-  
-  .start-button:hover {
+}
+
+.start-button:hover {
     background-color: #517818;
-  }
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (max-width: 576px) {
+    .quiz-container {
+        height: auto;
+        width: auto;
+    }
+
+    body {
+        background: url("../images/front-page.webp") no-repeat center center/cover;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (max-width: 768px) {
+    .quiz-container {
+        height: auto;
+        width: auto;
+    }
+
+    body {
+        background: url("../images/front-page.webp") no-repeat center center/cover;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+    .quiz-container {
+        height: auto;
+        width: auto;
+    }
+
+    body {
+        background: url("../images/front-page.webp") no-repeat center center/cover;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Large devices (laptops and desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    .quiz-container {
+        height: auto;
+        width: auto;
+    }
+
+    body {
+        background: url("../images/front-page.webp") no-repeat center center/cover;
+        height: auto;
+        width: auto;
+    }
+}
