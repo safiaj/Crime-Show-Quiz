@@ -45,5 +45,12 @@ const quizData = [
 
 // Used the following sources to create the following code: youtube, google, code institue love math challenge and modules 
 
+// Pull through DOM content
+const questionContainer = document.getElementById("question-container");
+const submitButton = document.getElementById("submit-btn");
+const resultContainer = document.getElementById("result");
+
+let currentQuestion = 0;
+let score = 0;
 
 
