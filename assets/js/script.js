@@ -65,3 +65,19 @@ function updateQuestionCounter(currentQuestion, totalQuestions) {
 
 // Load first question when the page loads
 loadQuestion();
+
+// Event listener for submit button
+submitButton.addEventListener("click", checkAnswer);
+
+// Function to load question
+function loadQuestion() {
+    // Get question container element
+    const questionContainer = document.getElementById("question-container");
+    
+    // Loads the current question
+    const questionData = quizData[currentQuestion];
+    questionContainer.innerHTML = `<p>${questionData.question}</p>`;
+    questionData.options.forEach(option => {
+        questionContainer.innerHTML += `<input type="radio" name="answer" value="${option}">${option}<br>`;
+    });
+}
