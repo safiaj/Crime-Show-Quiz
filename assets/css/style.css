@@ -11,3 +11,62 @@
     font-weight: 400;
     color: #030303
   }
+
+  /* general body styles */
+  body {
+    font-family: 'Sedan', serif;
+    background-color: rgba(0, 100, 0, 0.5);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold; 
+  }
+  
+  /* style quiz-container to accentuate quiz area for users */
+  .quiz-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(205 220 57 / 75%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* style question counter separetely to question area */
+  #question-counter {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* style main heading with google font */
+  h1 {
+    color: #000000;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 400%;
+  }
+  
+  /* allow margin around question container */
+
+  #question-container {
+    margin: 20px 0;
+  }
+  
+  /* styling for submit button, stands out from question container */
+  #submit-btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit-btn:hover {
+    background-color: #517818;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
