@@ -10,7 +10,7 @@ You will see on the website the use of typical crime show colours and fonts lear
 
 The site has a clean, simple design with a green, black and white colour pallete to match the asthetic of crime shows like CSI: Miami.
 
-![mockup] (assets/images/mockup_ui.dev.png)
+![mockup] (readme.images/mockup_ui.dev.png)
 
 ## FEATURES
 
@@ -19,6 +19,8 @@ Existing Features
 * For simplicity and ease there is no specific navigation bar, users enter the website at the instructions page where they then click 'Start Quiz'. This ensures users are well informed before choosing to start the quiz on key aspects such as, the number of questions, the topics that the quiz will test and where to go should they forget the instructions. 
 * In trying to create a simple interactive website, the three buttons available for users to click are the following, 'Start Quiz', 'Submit Answer' and 'Go back to instructions page'. Due to the simple html 'a' ref code written the three navigation buttons link together the two html documents and the data set. 
 
+
+![Instructions] ('readme.images/instructions-page.png')
 
 ### Landing page 
 * The landing page includes an overlay of a typical CSI:Miami lab based background with a green instructions container overlay. This allows users to connect the quiz to typical crome shows with the aim of creating an enhanced UX as they connect the colour scheme and fonts chosen to various popular crime shows. 
@@ -35,6 +37,8 @@ Existing Features
 
 * The overall usage of javascript is explained above in the quiz section but to go through some of the functionality not mentioned, I included a pop up in the window which prompts users to pick an answer before submitting as they won't be able to movw on without doing so. This is done hrough the document query selector which ensures users click one of the radio buttons first. 
 
+![Quiz] (readme.images/quiz-page.png)
+![Quiz] (readme.images/end-of-quiz.png)
 
 
 ### CSS Styling
@@ -69,6 +73,7 @@ The site was deployed to GitHub Pages. Please follow the steps below to deploy:
 * Click "Save"
 * Wait until you can see a link for deployed page within Github Page section, this can take a while. In the 'Environments' section then click "View Deployment. The URL will look similar to my website below.
 
+https://safiaj.github.io/Crime-Show-Quiz/
 
 ## TECHNOLOGIES
 * Favicon.io - used to create favicon for the page
