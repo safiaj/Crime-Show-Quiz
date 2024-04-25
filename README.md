@@ -86,7 +86,7 @@ The site was deployed to GitHub Pages. Please follow the steps below to deploy:
 * pexels.com - for all open source images used.
 * W3C Validator - to check all code was correct.
 * Site24x7 - to check all code was correct.
-* Following youtube videos on creating an interactive site - 
+* Following youtube videos on creating an interactive site - https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
 * Student support on Slack.
 * Personal mentor support in general but specifically on JS code.
 * Love Maths project - for general help
