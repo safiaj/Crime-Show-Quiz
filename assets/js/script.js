@@ -53,4 +53,15 @@ const resultContainer = document.getElementById("result");
 let currentQuestion = 0;
 let score = 0;
 
+// question counter
+const currentQuestionElement = document.getElementById("current-question");
+const totalQuestionsElement = document.getElementById("total-questions");
 
+// Function to update question counter
+function updateQuestionCounter(currentQuestion, totalQuestions) {
+  currentQuestionElement.textContent = currentQuestion + 1;
+  totalQuestionsElement.textContent = totalQuestions;
+}
+
+// Load first question when the page loads
+loadQuestion();
