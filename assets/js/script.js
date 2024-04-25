@@ -42,3 +42,8 @@ const quizData = [
     },
 
 ];
+
+// Used the following sources to create the following code: youtube, google, code institue love math challenge and modules 
+
+
+
