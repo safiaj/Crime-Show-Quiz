@@ -10,6 +10,8 @@ You will see on the website the use of typical crime show colours and fonts lear
 
 The site has a clean, simple design with a green, black and white colour pallete to match the asthetic of crime shows like CSI: Miami.
 
+![mockup] (assets/images/mockup_ui.dev.png)
+
 ## FEATURES
 
 Existing Features
