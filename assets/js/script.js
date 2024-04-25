@@ -81,3 +81,25 @@ function loadQuestion() {
         questionContainer.innerHTML += `<input type="radio" name="answer" value="${option}">${option}<br>`;
     });
 }
+
+// Function to check answer
+function checkAnswer() {
+    const selectedOption = document.querySelector('input[name="answer"]:checked');
+    if (!selectedOption) {
+        alert("Please select an answer!");
+        return;
+    }
+
+    const userAnswer = selectedOption.value;
+    if (userAnswer === quizData[currentQuestion].answer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < quizData.length) {
+        loadQuestion();
+    } else {
+        showResult();
+    }
+}
