@@ -10,19 +10,22 @@
     Font-Family: 'Sedan', serif;
     font-weight: 400;
     color: #030303
-  }
+}
 
-  /* general body styles */
-  body {
+/* general body styles */
+body {
     font-family: 'Sedan', serif;
     background-color: rgba(0, 100, 0, 0.5);
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-weight: bold; 
-  }
-  
-  /* style quiz-container to accentuate quiz area for users */
-  .quiz-container {
+    font-weight: bold;
+    background: url("../images/front-page.webp") no-repeat center center/cover;
+    height: 800px;
+    width: 100%;
+}
+
+/* style quiz-container to accentuate quiz area for users */
+.quiz-container {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
@@ -30,43 +33,89 @@
     background-color: rgb(205 220 57 / 75%);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
-  /* style question counter separetely to question area */
-  #question-counter {
+/* style question counter separetely to question area */
+#question-counter {
     font-size: 18px;
     margin-bottom: 20px;
-  }
-  
-  /* style main heading with google font */
-  h1 {
+}
+
+/* style main heading with google font */
+h1 {
     color: #000000;
     font-family: 'Jersey 10', sans-serif;
     font-size: 400%;
-  }
-  
-  /* allow margin around question container */
+}
 
-  #question-container {
+/* allow margin around question container */
+
+#question-container {
     margin: 20px 0;
-  }
-  
-  /* styling for submit button, stands out from question container */
-  #submit-btn {
+}
+
+/* styling for submit button, stands out from question container */
+#submit-btn {
     padding: 10px 20px;
     background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  #submit-btn:hover {
+}
+
+#submit-btn:hover {
     background-color: #517818;
-  }
-  
-  #result {
+}
+
+#result {
     margin-top: 20px;
     font-weight: bold;
+}
+
+
+.instructions-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #a6a83c; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(177, 207, 23, 0.3); 
+  }
+
+  /* Add margin below the title */
+  .instructions-title {
+    margin-bottom: 30px; 
+  }
+
+  /* Add margin below each paragraph */
+  .instructions-container p {
+    margin-bottom: 20px; 
+  }
+
+  /* Add margin below the ordered list */
+  .instructions-container ol {
+    margin-bottom: 30px; 
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .start-button {
+    display: block;
+    width: fit-content; 
+    margin: 20px auto 0; 
+    padding: 10px 20px;
+    background-color: #d0ff00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .start-button:hover {
+    background-color: #517818;
   }
