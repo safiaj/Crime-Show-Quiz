@@ -71,15 +71,15 @@ submitButton.addEventListener("click", checkAnswer);
 
 // Function to load question
 function loadQuestion() {
-    // Get question container element
-    const questionContainer = document.getElementById("question-container");
-    
-    // Loads the current question
     const questionData = quizData[currentQuestion];
     questionContainer.innerHTML = `<p>${questionData.question}</p>`;
     questionData.options.forEach(option => {
-        questionContainer.innerHTML += `<input type="radio" name="answer" value="${option}">${option}<br>`;
+        questionContainer.innerHTML += `<label><input type="radio" name="answer" value="${option}" ${userAnswers[currentQuestion] === option ? 'checked' : ''}>${option}</label><br>`;
     });
+    updateQuestionCounter(currentQuestion, quizData.length);
+    correctFeedback.style.display = 'none';
+    incorrectFeedback.style.display = 'none';
+    submitButton.textContent = "Submit Answer";
 }
 
 // Function to check answer and allow access to the next question in the quiz set 
