@@ -60,6 +60,7 @@ const questionContainer = document.getElementById("question-container");
 
 let currentQuestion = 0;
 let score = 0;
+let userAnswers = Array(quizData.length).fill(null);
 
 // question counter
 const currentQuestionElement = document.getElementById("current-question");
