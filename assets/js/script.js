@@ -142,24 +142,30 @@ function hideQuestionCounter() {
 function showResult() {
     questionContainer.innerHTML = "";
     submitButton.style.display = "none";
+    backButton.style.display = "none";
     resultContainer.innerHTML = `Your score: ${score}/${quizData.length}`;
+    congratulationsContainer.style.display = "block";
+    correctFeedback.style.display = 'none';
+    incorrectFeedback.style.display = 'none';
+    hideQuestionCounter(); // Call the function to hide the question counter
 }
 
-    // Event listeners
-    submitButton.addEventListener("click", checkAnswer);
 
-    backButton.addEventListener("click", () => {
-        if (currentQuestion > 0) {
-            currentQuestion--;
-            loadQuestion();
-            submitButton.removeEventListener("click", loadNextQuestion);
-            submitButton.addEventListener("click", checkAnswer);
+// Event listeners
+submitButton.addEventListener("click", checkAnswer);
 
-            if (userAnswers[currentQuestion] !== null) {
-                showFeedback();
-            }
+backButton.addEventListener("click", () => {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+        submitButton.removeEventListener("click", loadNextQuestion);
+        submitButton.addEventListener("click", checkAnswer);
 
-            backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
+        if (userAnswers[currentQuestion] !== null) {
+            showFeedback();
         }
-    });
+
+        backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
+    }
+});
 });
