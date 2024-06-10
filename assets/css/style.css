@@ -75,10 +75,9 @@ body {
     font-size: 25px
 }
 
-
 /* style main heading with google font */
 h1 {
-    color: #000000;
+    color: #333;
     font-family: 'Jersey 10', sans-serif;
     font-size: 400%;
 }
@@ -88,6 +87,27 @@ h1 {
 #question-container {
     margin: 20px 0;
 }
+
+/* Style individual questions */
+#question-container p {
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Bigger font size for questions */
+}
+
+/* Style individual options and add spacing */
+#question-container input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+#question-container label {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 1.3em; /* Bigger font size for options */
+    text-align: left;
+    padding-left: 20px; /* Adding padding to align text with radio buttons */
+}
+
 
 /* styling for submit button, stands out from question container */
 #submit-btn {
