@@ -48,6 +48,27 @@ body {
     margin-bottom: 20px;
 }
 
+/* Updates - Add styling to the feedback after each submitted answer */
+.feedback {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#correct-feedback {
+    color: rgb(41, 108, 41);
+    display: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#incorrect-feedback {
+    color: red;
+    display: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 /* style main heading with google font */
 h1 {
     color: #000000;
