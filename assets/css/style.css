@@ -29,16 +29,17 @@ body {
 
 }
 
-/* style quiz-container to accentuate quiz area for users */
+/* Style quiz-container to accentuate quiz area for users */
 .quiz-container {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
-    background-color: rgb(205 220 57 / 75%);
-    padding: 20px;
+    top: 50px; /* Position it 50px from the top */
+    background-color: rgba(205, 220, 57, 0.9);
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 
 /* style question counter separetely to question area */
