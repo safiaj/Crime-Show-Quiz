@@ -62,21 +62,12 @@ let currentQuestion = 0;
 let score = 0;
 let userAnswers = Array(quizData.length).fill(null);
 
-// question counter
-const currentQuestionElement = document.getElementById("current-question");
-const totalQuestionsElement = document.getElementById("total-questions");
 
 // Function to update question counter
 function updateQuestionCounter(currentQuestion, totalQuestions) {
   currentQuestionElement.textContent = currentQuestion + 1;
   totalQuestionsElement.textContent = totalQuestions;
 }
-
-// Load first question when the page loads
-loadQuestion();
-
-// Event listener for submit button
-submitButton.addEventListener("click", checkAnswer);
 
 // Function to load question
 function loadQuestion() {
@@ -91,6 +82,14 @@ function loadQuestion() {
     submitButton.textContent = "Submit Answer";
 }
 
+function showFeedback() {
+    const userAnswer = userAnswers[currentQuestion];
+    const correctAnswer = quizData[currentQuestion].answer;
+
+
+
+
+    
 // Function to check answer and allow access to the next question in the quiz set 
 function checkAnswer() {
     const selectedOption = document.querySelector('input[name="answer"]:checked');
