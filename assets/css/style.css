@@ -69,6 +69,13 @@ body {
     font-weight: bold;
 }
 
+/* Congratualtions message for finishing the quiz */
+#congratulations {
+    display: none;
+    font-size: 25px
+}
+
+
 /* style main heading with google font */
 h1 {
     color: #000000;
