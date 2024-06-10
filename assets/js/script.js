@@ -120,6 +120,20 @@ function checkAnswer() {
 }
 
 
+function loadNextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < quizData.length) {
+        loadQuestion();
+        submitButton.removeEventListener("click", loadNextQuestion);
+        submitButton.addEventListener("click", checkAnswer);
+    } else {
+        showResult();
+    }
+}
+
+
+
+
 
 
 
