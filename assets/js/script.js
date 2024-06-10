@@ -22,31 +22,25 @@ const quizData = [
         options: ["Monk", "CSI: Miami", "Law and Order: SVU", "Criminal Minds"],
         answer: "Criminal Minds"
     },
-
     {
-        question: " What does Natalie Teeger call Monk?",
+        question: "What does Natalie Teeger call Monk?",
         options: ["Monkey Man", "Mr. Monk", "Super-Monk-Genius", "Investigator Monk"],
         answer: "Mr. Monk"
     },
-
     {
         question: "Which actress played Assistant DA Alexandra Cabot?",
         options: ["Diane Neal", "Michaela Mcmanus", "Casey Novak", "Stephanie March"],
         answer: "Stephanie March"
     },
-
     {
         question: "Trudy, Monk's beloved wife, was murdered before the time line of the show began. In what way was she murdered?",
         options: ["Car bomb", "Shooting", "Stabbing", "Hidden Poison"],
         answer: "Car bomb"
-    },
-
+    }
 ];
 
-// Used the following sources to create the following code: youtube, google, code institue love math challenge and modules 
-
-// Pull through DOM content
-const questionContainer = document.getElementById("question-container");
+document.addEventListener("DOMContentLoaded", () => {
+    const questionContainer = document.getElementById("question-container");
     const submitButton = document.getElementById("submit-btn");
     const backButton = document.getElementById("back-btn");
     const resultContainer = document.getElementById("result");
@@ -57,105 +51,96 @@ const questionContainer = document.getElementById("question-container");
     const incorrectFeedback = document.getElementById("incorrect-feedback");
     const correctAnswerSpan = document.getElementById("correct-answer");
 
+    let currentQuestion = 0;
+    let score = 0;
+    let userAnswers = Array(quizData.length).fill(null);
 
-let currentQuestion = 0;
-let score = 0;
-let userAnswers = Array(quizData.length).fill(null);
+    function updateQuestionCounter(currentQuestion, totalQuestions) {
+        currentQuestionElement.textContent = currentQuestion + 1;
+        totalQuestionsElement.textContent = totalQuestions;
+    }
 
-
-// Function to update question counter
-function updateQuestionCounter(currentQuestion, totalQuestions) {
-  currentQuestionElement.textContent = currentQuestion + 1;
-  totalQuestionsElement.textContent = totalQuestions;
-}
-
-// Function to load question
-function loadQuestion() {
-    const questionData = quizData[currentQuestion];
-    questionContainer.innerHTML = `<p>${questionData.question}</p>`;
-    questionData.options.forEach(option => {
-        questionContainer.innerHTML += `<label><input type="radio" name="answer" value="${option}" ${userAnswers[currentQuestion] === option ? 'checked' : ''}>${option}</label><br>`;
-    });
-    updateQuestionCounter(currentQuestion, quizData.length);
-    correctFeedback.style.display = 'none';
-    incorrectFeedback.style.display = 'none';
-    submitButton.textContent = "Submit Answer";
-}
-
-function showFeedback() {
-    const userAnswer = userAnswers[currentQuestion];
-    const correctAnswer = quizData[currentQuestion].answer;
-
-    if (userAnswer === correctAnswer) {
-        correctFeedback.style.display = 'block';
-        incorrectFeedback.style.display = 'none';
-        score++;
-    } else {
+    function loadQuestion() {
+        const questionData = quizData[currentQuestion];
+        questionContainer.innerHTML = `<p>${questionData.question}</p>`;
+        questionData.options.forEach(option => {
+            questionContainer.innerHTML += `<label><input type="radio" name="answer" value="${option}" ${userAnswers[currentQuestion] === option ? 'checked' : ''}>${option}</label><br>`;
+        });
+        updateQuestionCounter(currentQuestion, quizData.length);
         correctFeedback.style.display = 'none';
-        incorrectFeedback.style.display = 'block';
-        correctAnswerSpan.textContent = correctAnswer;
-    }
-    if (currentQuestion === quizData.length - 1) {
-        submitButton.textContent = "Finish";
-    } else {
-        submitButton.textContent = "Next Question";
-    }
-    submitButton.removeEventListener("click", checkAnswer);
-    submitButton.addEventListener("click", loadNextQuestion);
-}
-
-
-// Function to check answer and allow access to the next question in the quiz set 
-function checkAnswer() {
-    const selectedOption = document.querySelector('input[name="answer"]:checked');
-    if (!selectedOption) {
-        alert("Please select an answer!");
-        return;
+        incorrectFeedback.style.display = 'none';
+        submitButton.textContent = "Submit Answer";
     }
 
-    userAnswers[currentQuestion] = selectedOption.value;
-    showFeedback();
+    function showFeedback() {
+        const userAnswer = userAnswers[currentQuestion];
+        const correctAnswer = quizData[currentQuestion].answer;
 
-    backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
-}
+        if (userAnswer === correctAnswer) {
+            correctFeedback.style.display = 'block';
+            incorrectFeedback.style.display = 'none';
+            score++;
+        } else {
+            correctFeedback.style.display = 'none';
+            incorrectFeedback.style.display = 'block';
+            correctAnswerSpan.textContent = correctAnswer;
+        }
 
-
-function loadNextQuestion() {
-    currentQuestion++;
-    if (currentQuestion < quizData.length) {
-        loadQuestion();
-        submitButton.removeEventListener("click", loadNextQuestion);
-        submitButton.addEventListener("click", checkAnswer);
-    } else {
-        showResult();
+        if (currentQuestion === quizData.length - 1) {
+            submitButton.textContent = "Finish";
+        } else {
+            submitButton.textContent = "Next Question";
+        }
+        submitButton.removeEventListener("click", checkAnswer);
+        submitButton.addEventListener("click", loadNextQuestion);
     }
-}
 
-// Function to hid the question counter element from the UI
-function hideQuestionCounter() {
-    const questionCounter = document.getElementById("question-counter");
-    questionCounter.style.display = "none";
-}
+    function checkAnswer() {
+        const selectedOption = document.querySelector('input[name="answer"]:checked');
+        if (!selectedOption) {
+            alert("Please select an answer!");
+            return;
+        }
 
+        userAnswers[currentQuestion] = selectedOption.value;
+        showFeedback();
 
-// Function to show result
-function showResult() {
-    questionContainer.innerHTML = "";
-    submitButton.style.display = "none";
-    backButton.style.display = "none";
-    resultContainer.innerHTML = `Your score: ${score}/${quizData.length}`;
-    congratulationsContainer.style.display = "block";
-    correctFeedback.style.display = 'none';
-    incorrectFeedback.style.display = 'none';
-    hideQuestionCounter(); // Call the function to hide the question counter
-}
+        backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
+    }
 
+    function loadNextQuestion() {
+        currentQuestion++;
+        if (currentQuestion < quizData.length) {
+            loadQuestion();
+            submitButton.removeEventListener("click", loadNextQuestion);
+            submitButton.addEventListener("click", checkAnswer);
+        } else {
+            showResult();
+        }
+    }
 
-// Start the quiz
-loadQuestion();
-updateQuestionCounter(currentQuestion, quizData.length);
+    function hideQuestionCounter() {
+        const questionCounter = document.getElementById("question-counter");
+        questionCounter.style.display = "none";
+    }
+    
 
-// Event listeners
+    function showResult() {
+        questionContainer.innerHTML = "";
+        submitButton.style.display = "none";
+        backButton.style.display = "none";
+        resultContainer.innerHTML = `Your score: ${score}/${quizData.length}`;
+        congratulationsContainer.style.display = "block";
+        correctFeedback.style.display = 'none';
+        incorrectFeedback.style.display = 'none';
+        hideQuestionCounter(); // Call the function to hide the question counter
+    }
+
+    // Start the quiz
+    loadQuestion();
+    updateQuestionCounter(currentQuestion, quizData.length);
+
+    // Event listeners
     submitButton.addEventListener("click", checkAnswer);
 
     backButton.addEventListener("click", () => {
@@ -173,4 +158,3 @@ updateQuestionCounter(currentQuestion, quizData.length);
         }
     });
 });
-
