@@ -86,10 +86,18 @@ function showFeedback() {
     const userAnswer = userAnswers[currentQuestion];
     const correctAnswer = quizData[currentQuestion].answer;
 
+    if (userAnswer === correctAnswer) {
+        correctFeedback.style.display = 'block';
+        incorrectFeedback.style.display = 'none';
+        score++;
+    } else {
+        correctFeedback.style.display = 'none';
+        incorrectFeedback.style.display = 'block';
+        correctAnswerSpan.textContent = correctAnswer;
+    }
 
 
 
-    
 // Function to check answer and allow access to the next question in the quiz set 
 function checkAnswer() {
     const selectedOption = document.querySelector('input[name="answer"]:checked');
