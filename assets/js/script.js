@@ -131,10 +131,11 @@ function loadNextQuestion() {
     }
 }
 
-
-
-
-
+// Function to hid the question counter element from the UI
+function hideQuestionCounter() {
+    const questionCounter = document.getElementById("question-counter");
+    questionCounter.style.display = "none";
+}
 
 
 // Function to show result
