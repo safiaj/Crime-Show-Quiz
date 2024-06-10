@@ -100,6 +100,9 @@ function showFeedback() {
     } else {
         submitButton.textContent = "Next Question";
     }
+    submitButton.removeEventListener("click", checkAnswer);
+    submitButton.addEventListener("click", loadNextQuestion);
+}
 
 
 
