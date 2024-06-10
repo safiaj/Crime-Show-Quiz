@@ -118,3 +118,22 @@ function showResult() {
     submitButton.style.display = "none";
     resultContainer.innerHTML = `Your score: ${score}/${quizData.length}`;
 }
+
+    // Event listeners
+    submitButton.addEventListener("click", checkAnswer);
+
+    backButton.addEventListener("click", () => {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            loadQuestion();
+            submitButton.removeEventListener("click", loadNextQuestion);
+            submitButton.addEventListener("click", checkAnswer);
+
+            if (userAnswers[currentQuestion] !== null) {
+                showFeedback();
+            }
+
+            backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
+        }
+    });
+});
