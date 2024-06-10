@@ -120,7 +120,6 @@ h1 {
     cursor: pointer;
 }
 
-
 #submit-btn:hover {
     background-color: #517818;
 }
@@ -128,8 +127,8 @@ h1 {
 #result {
     margin-top: 20px;
     font-weight: bold;
+    font-size: 30px;
 }
-
 
 .instructions-container {
     max-width: 500px;
@@ -149,15 +148,15 @@ h1 {
 /* Add margin below each paragraph */
 .instructions-container p {
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 /* Add margin below the ordered list */
 .instructions-container ol {
     margin-bottom: 30px;
-}
-
-h1 {
-    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+    
 }
 
 .start-button {
