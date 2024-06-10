@@ -151,21 +151,26 @@ function showResult() {
 }
 
 
+// Start the quiz
+loadQuestion();
+updateQuestionCounter(currentQuestion, quizData.length);
+
 // Event listeners
-submitButton.addEventListener("click", checkAnswer);
+    submitButton.addEventListener("click", checkAnswer);
 
-backButton.addEventListener("click", () => {
-    if (currentQuestion > 0) {
-        currentQuestion--;
-        loadQuestion();
-        submitButton.removeEventListener("click", loadNextQuestion);
-        submitButton.addEventListener("click", checkAnswer);
+    backButton.addEventListener("click", () => {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            loadQuestion();
+            submitButton.removeEventListener("click", loadNextQuestion);
+            submitButton.addEventListener("click", checkAnswer);
 
-        if (userAnswers[currentQuestion] !== null) {
-            showFeedback();
+            if (userAnswers[currentQuestion] !== null) {
+                showFeedback();
+            }
+
+            backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
         }
+    });
+});
 
-        backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
-    }
-});
-});
