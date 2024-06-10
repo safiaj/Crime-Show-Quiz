@@ -113,6 +113,13 @@ function checkAnswer() {
         return;
     }
 
+    userAnswers[currentQuestion] = selectedOption.value;
+    showFeedback();
+
+
+
+
+
 // Function to show result
 function showResult() {
     questionContainer.innerHTML = "";
