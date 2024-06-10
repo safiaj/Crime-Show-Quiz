@@ -112,12 +112,14 @@ h1 {
 /* styling for submit button, stands out from question container */
 #submit-btn {
     padding: 10px 20px;
-    background-color: #000000;
-    color: #fff;
+    font-size: 18px;
+    background-color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 #submit-btn:hover {
     background-color: #517818;
