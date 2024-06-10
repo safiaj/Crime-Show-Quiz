@@ -191,11 +191,26 @@ h1 {
     background-color: #517818;
 }
 
-
 .start-button:hover {
     background-color: #517818;
 }
 
+/* New back button styling to match current button styles*/
+#back-btn {
+    display: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#back-btn:hover {
+    background-color: #517818;
+}
 
 /* Media query: small devices (phones, 576px and up) */
 @media (max-width: 576px) {
