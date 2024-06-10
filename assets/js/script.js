@@ -82,6 +82,8 @@ function loadQuestion() {
     submitButton.textContent = "Submit Answer";
 }
 
+
+
 // Function to check answer and allow access to the next question in the quiz set 
 function checkAnswer() {
     const selectedOption = document.querySelector('input[name="answer"]:checked');
