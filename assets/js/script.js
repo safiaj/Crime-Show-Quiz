@@ -105,28 +105,10 @@ function showFeedback() {
 }
 
 
-
 // Function to check answer and allow access to the next question in the quiz set 
 function checkAnswer() {
     const selectedOption = document.querySelector('input[name="answer"]:checked');
-    if (!selectedOption) {
-        alert("Please select an answer!");
-        return;
-    }
 
-    const userAnswer = selectedOption.value;
-    if (userAnswer === quizData[currentQuestion].answer) {
-        score++;
-    }
-
-    currentQuestion++;
-
-    if (currentQuestion < quizData.length) {
-        loadQuestion();
-    } else {
-        showResult();
-    }
-}
 
 // Function to show result
 function showResult() {
