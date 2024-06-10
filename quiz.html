@@ -5,43 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engines -->
     <meta name="description" content="A quiz game to test fans on their knowledge of popular US Crime Shows">
-    <meta name="keywords" content="law and order: svu, csi, criminal minds, detective, crime, quiz, general knowledge, fiction, mystery">
+    <meta name="keywords"
+        content="law and order: svu, csi, criminal minds, detective, crime, quiz, general knowledge, fiction, mystery">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Sedan&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+     <!-- External CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Favicon link -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+     <!-- Favicon link -->
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    
     <!-- Title -->
     <title>US Crime Shows Quiz</title>
 </head>
 <body>
-    <a href="index.html" class="start-button">Go back to the instructions page!</a>
+    <a href="index.html" class="start-button">Go back to instruction page!</a>
     <div class="quiz-container">
         <h1 class="quiz-title">US Crime Shows Quiz</h1>
-        <div id="question-counter">Question <span id="current-question"> 1 </span> of <span id="total-questions"> 7 </span></div>
+        <div id="question-counter">Question <span id="current-question">1 </span>of <span id="total-questions">7 </span></div>
         <div id="question-container"></div>
-        <div id="feedback-container">
-            <p id="correct-feedback" class="feedback">Correct!</p>
-            <p id="incorrect-feedback" class="feedback">Incorrect! The correct answer is <span id="correct-answer"></span>.</p>
-        </div>
         <button id="submit-btn">Submit Answer</button>
-        <button id="next-btn" style="display: none;">Next Question</button>
-        <button id="back-btn">Back to Previous Question</button>
         <div id="result"></div>
-        <div id="congratulations">
-            <p><br>Congratulations!</p>
-            <br>
-            <p>You have now completed the quiz. If you'd like to try again please click the 'Go back to instruction page' button above!</p>
-        </div>
     </div>
-    <!-- External JavaScript -->
+    <!-- External Javascript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
