@@ -116,6 +116,9 @@ function checkAnswer() {
     userAnswers[currentQuestion] = selectedOption.value;
     showFeedback();
 
+    backButton.style.display = currentQuestion > 0 ? "inline-block" : "none";
+}
+
 
 
 
