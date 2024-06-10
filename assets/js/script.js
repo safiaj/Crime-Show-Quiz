@@ -95,6 +95,11 @@ function showFeedback() {
         incorrectFeedback.style.display = 'block';
         correctAnswerSpan.textContent = correctAnswer;
     }
+    if (currentQuestion === quizData.length - 1) {
+        submitButton.textContent = "Finish";
+    } else {
+        submitButton.textContent = "Next Question";
+    }
 
 
 
