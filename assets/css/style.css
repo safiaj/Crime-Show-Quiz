@@ -160,16 +160,19 @@ h1 {
 }
 
 .start-button {
-    display: block;
-    width: fit-content;
-    margin: 20px auto 0;
+    position: absolute;
+    top: 15px; /* Position it near the top of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+    font-size: 18px;
     padding: 10px 20px;
     background-color: #d0ff00;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
-    margin-bottom: 20px;
+    z-index: 2; /* Ensure it stays above other content */
 }
+
 
 .start-button:hover {
     background-color: #517818;
