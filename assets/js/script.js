@@ -47,8 +47,16 @@ const quizData = [
 
 // Pull through DOM content
 const questionContainer = document.getElementById("question-container");
-const submitButton = document.getElementById("submit-btn");
-const resultContainer = document.getElementById("result");
+    const submitButton = document.getElementById("submit-btn");
+    const backButton = document.getElementById("back-btn");
+    const resultContainer = document.getElementById("result");
+    const congratulationsContainer = document.getElementById("congratulations");
+    const currentQuestionElement = document.getElementById("current-question");
+    const totalQuestionsElement = document.getElementById("total-questions");
+    const correctFeedback = document.getElementById("correct-feedback");
+    const incorrectFeedback = document.getElementById("incorrect-feedback");
+    const correctAnswerSpan = document.getElementById("correct-answer");
+
 
 let currentQuestion = 0;
 let score = 0;
@@ -81,8 +89,6 @@ function loadQuestion() {
     incorrectFeedback.style.display = 'none';
     submitButton.textContent = "Submit Answer";
 }
-
-
 
 // Function to check answer and allow access to the next question in the quiz set 
 function checkAnswer() {
