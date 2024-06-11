@@ -1,15 +1,14 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Sedan&display=swap');
 
-
-/*Asterisk wildcard selector to override default styles added by the browser*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    Padding: 0;
-    Margin: 0;
+    padding: 0;
+    margin: 0;
     border: none;
-    Font-Family: 'Sedan', serif;
+    font-family: 'Sedan', serif;
     font-weight: 400;
-    color: #030303
+    color: #030303;
 }
 
 /* General body styles */
@@ -42,7 +41,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* style question counter separetely to question area */
+
+
+
+/* Style question counter separately to question area */
 #question-counter {
     font-size: 30px;
     margin-bottom: 20px;
@@ -75,15 +77,14 @@ body {
     font-size: 25px
 }
 
-/* style main heading with google font */
+/* Style main heading with google font */
 h1 {
     color: #333;
     font-family: 'Jersey 10', sans-serif;
     font-size: 400%;
 }
 
-/* allow margin around question container */
-
+/* Allow margin around question container */
 #question-container {
     margin: 20px 0;
 }
@@ -108,8 +109,7 @@ h1 {
     padding-left: 20px; /* Adding padding to align text with radio buttons */
 }
 
-
-/* styling for submit button, stands out from question container */
+/* Styling for submit button, stands out from question container */
 #submit-btn {
     padding: 10px 20px;
     font-size: 18px;
@@ -134,7 +134,7 @@ h1 {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    background-color: #a6a83c;
+    background-color: rgba(205, 220, 57, 0.9);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(177, 207, 23, 0.3);
@@ -173,6 +173,7 @@ h1 {
     z-index: 2; /* Ensure it stays above other content */
 }
 
+
 .start-button-container {
     display: block;
     width: fit-content;
@@ -192,9 +193,8 @@ h1 {
 }
 
 .start-button:hover {
-    background-color: #517818;
+    background-color:#517818;
 }
-
 /* New back button styling to match current button styles*/
 #back-btn {
     display: none;
