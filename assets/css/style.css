@@ -212,6 +212,23 @@ h1 {
     background-color: #517818;
 }
 
+/* Styling for the next question button to make it stand out */
+#next-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+}
+
+#next-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
 /* Media query: small devices (phones, 576px and up) */
 @media (max-width: 576px) {
     body {
