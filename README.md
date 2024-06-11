@@ -110,7 +110,8 @@ Option 5 - go back to previous question.
 
 * JS - No errors were found when passing the javascript code through the official JSHint tool.
 
-![HTML-Validator]
+![Index HTML File Validator](https://github.com/safiaj/Crime-Show-Quiz/blob/main/assets/images/readme.images/Index HTML%20file%20W3C%20Validator.png)
+![Quiz-HTML-File-Validator]
 ![CSS-Validator]
 
 
