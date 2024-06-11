@@ -27,7 +27,7 @@ How is it useful for the intended users:
 3. The functionality that allows for feedback makes this a useful quiz as it not only tests users knowledge but users are also able to learn more about these shows as they go through the quiz.
 
 
-![mockup] 
+![mockup](assets/images/readme.images/mockup-quiz-site.png) 
 
 ## FEATURES
 
@@ -45,21 +45,20 @@ Option 5 - go back to previous question.
 
 * These options will allow users to easily navigate fromm page to page across all devices without having to click the 'back' button on the browser. 
 
+![start-quiz-nav-bar](assets/images/readme.images/start-quiz-nav-bar.png)
+![go-back-to-instructions-page-nav-bar](assets/images/readme.images/instructions-button-nav-bar.png)
+![submit-answer-nav-bar](assets/images/readme.images/submit-answer-nav-bar.png)
+![next-question-nav-bar](assets/images/readme.images/next-question-nav-bar.png)
+![go-back-previous-question-nav-bar](assets/images/readme.images/previous-question-nav-bar.png)
 
-![start-quiz-nav-bar] (assets/images/start-quiz-nav-bar.png)
-![go-back-to-instructions-page-nav-bar] (/workspace/Crime-Show-Quiz/assets/images/previous-question-nav-bar.png)
-![submit-answer-nav-bar]
-![next-question-nav-bar]
-![go-back-previous-question-nav-bar]
-
-### Introduction Page
+### Instructions Page
 * The landing page includes an overlay of a typical CSI:Miami lab based background with a green instructions container overlay. This allows users to connect the quiz to typical crime shows with the aim of creating an enhanced UX as they connect the colour scheme and fonts chosen to various popular crime shows. 
 
 * As the user enters the site they see the instructions at first glance and are able to avoid spoilers of the questions. The text on this instruction page is simple and kept to a minimum 
 
 *This ensures users are well informed before choosing to start the quiz on key aspects such as, the number of questions, the topics that the quiz will test and where to go should they forget the instructions.
 
-![introduction-page]
+![instructions-page](assets/images/readme.images/instructions-page.png)
 
 
 ### Quiz Page
@@ -68,7 +67,7 @@ Option 5 - go back to previous question.
 
 * Users will get the opportunity to pick answers from a multiple choice selection which supports seasoned crime show viewers and newer fanatics to test their knowledge without too much pressure.
 
-![quiz-page]
+![quiz-page](assets/images/readme.images/quiz-page.png)
 
 ### Quiz Feedback 
 
@@ -76,14 +75,15 @@ Option 5 - go back to previous question.
 
 * This feature is important as the aim of the website is to learn and test your knowledge on these crime shows which wouldn't be possible without a feedback option.
 
-![quiz-feedback]
+![quiz-feedback-incorrect-answer-button](assets/images/readme.images/incorrect-answer.png)
+![quiz-feedback-correct-answer-button](assets/images/readme.images/correct-answer.png)
 
 ### Congratulations Page
 
 * At the end of the quiz a 'congratulations' message is displayed notifying users of their score and giving users a choice to retake the quix. 
 * This feature is important as it encourages users to try again and also provides a positive message reiterating that they've done a great job and they'll want to try again until they recieve a 7/7 score.
 
-![congratualtions-message]
+![congratualtions-message](assets/images/readme.images/congratulations-page.png)
 
 ### Question Counter 
 
@@ -92,7 +92,7 @@ Option 5 - go back to previous question.
 * This will encourage users to carry on with the quiz as they build their excitement to find out their final score and next steps.
 
 
-![question-counter]
+![question-counter](assets/images/readme.images/question-counter.png)
 
 
 ## Features left to implement 
@@ -110,9 +110,9 @@ Option 5 - go back to previous question.
 
 * JS - No errors were found when passing the javascript code through the official JSHint tool.
 
-![Index HTML File Validator](https://github.com/safiaj/Crime-Show-Quiz/blob/main/assets/images/readme.images/Index HTML%20file%20W3C%20Validator.png)
-![Quiz-HTML-File-Validator]
-![CSS-Validator]
+![Index-HTML-File-Validator](assets/images/readme.images/index-html-file-validator.png)
+![Quiz-HTML-File-Validator](assets/images/readme.images/quiz-html-file- validator.png)
+![CSS-Validator](assets/images/readme.images/style-css-file-validator.png)
 
 
 ### Manual Testing
