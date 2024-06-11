@@ -1,31 +1,33 @@
 # US Crime Shows Quiz
 
+## General Overview
+
+The site is aimed people interested in testing their knowledge of popular fiction crime shows with questions related to specific episodes, characters and actors. The site includes an instructions page ensuring end users understand how to play the quiz and what to expect as they enter the quiz area. 
+
+You will see on the website the use of typical crime show colours and fonts learnt through my own experiences watching crime shows and partaking in similar quizes as research towards this project. 
+
+The site has a clean, simple design with a green, black and white colour pallete to match the asthetic of crime shows like CSI: Miami.
+
+## Website Purpose, Goals and Target Audience
+
 What the US Crimes Show Quiz hopes to accomplish:
 
 1. The aim of the US Crime Shows Quiz is to test the knowledge of popular crime shows fanatic in a fun, interactive and simple way.
 
 Intended user targets:
 
-1. 
-2.
-3.
+1. A website aimed at users who want to play an online quiz to test specific knowledge on popular US Crime shows.
+2. A fun interactive website that allows users to learn about US crime shows they may not have heard about before.
+3. Experience a challenging quiz which provides entertainment.
 
 How is it useful for the intended users:
 
-1.
-2.
-3.
+1. This quiz tests users knowledge in a fun, easy and entertaining way making it easier to capture and retain the users attention.
+2. The website allows users to learn about several different shows rather than a typical quiz which may focus on one show. This is useful as users may want to increase their overall knowledge rather than specific when it comes to Crime Shows.
+3. The functionality that allows for feedback makes this a useful quiz as it not only tests users knowledge but users are also able to learn more about these shows as they go through the quiz.
 
 
-The site is aimed people interested in testing their knowledge of popular fiction crime shows with questions related to specific episodes, characters and actors. The site includes an instructions page ensuring end users understand how to play the quiz and what to expect as they enter the quiz area. 
-
-You will see on the website the use of typical crime show colours and fonts learnt through my own experiences watching crime shows and partaking in similar quizes as research towards this project. 
-
-<br>
-
-The site has a clean, simple design with a green, black and white colour pallete to match the asthetic of crime shows like CSI: Miami.
-
-![mockup] (assets/images/readme.images/mockup_ui.dev.png)
+![mockup]
 
 ## FEATURES
 
@@ -33,62 +35,90 @@ In this section, you should go over the different parts of your project, and des
 
 
 ### Navigation Bar
-* For simplicity and ease there is no specific navigation bar, users enter the website at the instructions page where they then click 'Start Quiz'. This ensures users are well informed before choosing to start the quiz on key aspects such as, the number of questions, the topics that the quiz will test and where to go should they forget the instructions. 
-* In trying to create a simple interactive website, the three buttons available for users to click are the following, 'Start Quiz', 'Submit Answer' and 'Go back to instructions page'. Due to the simple html 'a' ref code written the three navigation buttons link together the two html documents and the data set. 
+* There are two simple navigation options as you can see below. An option to start the quiz after reading the instructions, and once users start an option to go back to the instructions start page. 
+
+* These options will allow users to easily navigate fromm page to page across all devices without having to click the 'back' button on the browser. 
 
 
-![Instructions] ('readme.images/instructions-page.png')
+![start-quiz-nav-bar]
+![go-back-to-instructions-page-nav-bar]
+![submit-answer-nav-bar]
+![next-question-nav-bar]
 
 ### Introduction Page
-* The landing page includes an overlay of a typical CSI:Miami lab based background with a green instructions container overlay. This allows users to connect the quiz to typical crome shows with the aim of creating an enhanced UX as they connect the colour scheme and fonts chosen to various popular crime shows. 
+* The landing page includes an overlay of a typical CSI:Miami lab based background with a green instructions container overlay. This allows users to connect the quiz to typical crime shows with the aim of creating an enhanced UX as they connect the colour scheme and fonts chosen to various popular crime shows. 
 
-* As the user enters the site they see the instructions at first glance and are able to avoid spoilers of the questions. The text on this instruction page is simple and kept to a minimum which is done through using bullet points.
+* As the user enters the site they see the instructions at first glance and are able to avoid spoilers of the questions. The text on this instruction page is simple and kept to a minimum 
 
-* The landing page required very minimal html code using a combination of divs to ensure the instructions were kept separate from the rest of the code, paragraphs to provide the inital overview of the quiz, before using an ordered list to ensure concise and clear instructions with a break in between each instruction so as to not overcrowd the page.
+*This ensures users are well informed before choosing to start the quiz on key aspects such as, the number of questions, the topics that the quiz will test and where to go should they forget the instructions.
+
+![introduction-page]
+
 
 ### Quiz Page
 
+* This section includes the quiz questions controlled by the user through a simple 'submit answer', 'next question' and 'go back to previous question' buttons.
+
+* Users will get the opportunity to pick answers from a multiple choice selection which supports seasoned crime show viewers and newer fanatics to test their knowledge without too much pressure.
+
+![quiz-page]
+
 ### Quiz Feedback 
+
+* To ensure users are learning from the quiz, feedback based on users answers will be provided with a simple 'Correct!' message or 'Incorrect, the correct answer is ...' message.
+
+* This feature is important as the aim of the website is to learn and test your knowledge on these crime shows which wouldn't be possible without a feedback option.
+
+![quiz-feedback]
 
 ### Congratulations Page
 
+* At the end of the quiz a 'congratulations' message is displayed notifying users of their score and giving users a choice to retake the quix. 
+* This feature is important as it encourages users to try again and also provides a positive message reiterating that they've done a great job and they'll want to try again until they recieve a 7/7 score.
+
+![congratualtions-message]
+
+### Question Counter 
+
+* The question counter allows users to keep track of the question they are currently on, this simply updates as the user clicks 'next question'.
+
+* This will encourage users to carry on with the quiz as they build their excitement to find out their final score and next steps.
 
 
-
-### Javascript and Quiz Page 
-* The quiz page uses the majority of the JS coding in this project ensuring users are able to submit answers using the checkAnswer function, inserting the specific quiz questions through the quizdata variable allowing for users to go through the 7 questions and their different options. 
-
-* The initial DPM which allows us to manipuate the data and pull the various worksheets together allowing for a cohesive and easy linkage between the various pages. The JS code written also allows us to create a quiz that has an ending allowing users through the event listeners to click the last submit button then invoking the check answer function again brining us back to the beginning of the quiz. 
-
-* The overall usage of javascript is explained above in the quiz section but to go through some of the functionality not mentioned, I included a pop up in the window which prompts users to pick an answer before submitting as they won't be able to movw on without doing so. This is done hrough the document query selector which ensures users click one of the radio buttons first. 
-
-![Quiz] (readme.images/quiz-page.png)
-![Quiz] (readme.images/end-of-quiz.png)
-
-
-### CSS Styling - not needed
-* The overall CSS styling as mentioned above took inspiration from typical crime shows including those in the quiz. Due to the simple nature of the quiz and website, css styling for this project was kept to a minimum, essentially limited to the quiz/instructions container, it's contents and the background image. As the main focus was on the interactivity of the quiz this simplicity and the styling chosen such as different font styles imported from google fonts and inserted in css makes for an 'easy to look at' page.
+![question-counter]
 
 
 ## Features left to implement 
-* Another feature idea I would like to implement after final review is an otpion for users to see what the correct questions are. This allows for a more interactive and pleasing experience further enhacing general UX and enticing users to come back. 
-* Users also may like a pop up page which shows a congratulatory message at completion of their completion which may encourage users to stay on the website to try the quiz again in anticipating of receiving full marks.
 
-* It could also be useful to add a timeout option at the end of the quiz where a user will be automatically redirected to the landing/instructions page after a certain time, e.g. 2 minutes which adds a certain element of fun but also a cleaner UI and UX overall as it signifies the end of the quiz.
+* A feature i'd like to implement is the ability to play against multiple people, making the quiz more interactive, if users are able to create profiles that keep track of their current scores and their pogress against their competitors, this should enourage users to stay connected with the website. 
+
+* Another feature which I would like to implement is an option for more questions. Currently the quiz is interactive and provides questions on several shows, adding more shows and questions will encourage users to stay on the site and carry on testing their knowledge and learning more about this topic.
 
 ## Testing
 
 ### Validator testing
-* HTML - No errors were found when passing through the official WSC Validator
+* HTML - No errors were found when passing through the official WSC Validator.
 
-* CSS - No errors were found when passing through the official Jigsaw W3 Validator
+* CSS - No errors were found when passing through the official Jigsaw W3 Validator.
+
+* JS - No errors were found when passing the javascript code through the official JSHint tool.
+
+![HTML-Validator]
+![CSS-Validator]
+
 
 ### Manual Testing
 
-### Unfixed Bugs
-* No bugs identified as proved through testing of the site.
+* To manually test the site I first sent the deployed link to several different family and friends devices to see how the site behaved on different size browsers as a form of 'market research'. The site worked well and there were no major issues. The one issue that seemed to happen on very small devices like an iPhone Mini is the instructions button would ever so slightly overlap with the quiz container. This did not affect the quality of the quiz as users were still able to get full functionality and visibility but it would've made for a better experience had the button not overlapped. 
 
-## Version Control - complete
+* Following feedback from assesors, I had realised there were some issues with the HTML files with stray symbols and unused functionality. I put all files through the W3C validator to ensure all errors were picked up and that the formatting of the code was correct as well. The images above show the positive output from these validators. 
+
+* When building the site I made sure to pull the site through to the browser so I could see changes I made in real time. As I made major updates to the file I would periodically use the 'inspect' option in the browser, specifically the 'console' option to step through each functioning part of the site to make sure it did not bring up any unidentitifed issues. I went through this step multiple times until no issues were flagged. 
+
+### Unfixed Bugs
+* Minor bug with slight overlapping of the instructions button on very small screens. Functionality and user experience were either not disrupted or was very minimally affected.
+
+## Version Control
 To ensure version control the following commands were used to ensure all features were deployed into the live site:
 
 * git add . - adds files reay for 'git commit -m'
@@ -96,15 +126,15 @@ To ensure version control the following commands were used to ensure all feature
 * git push - final command used to push code to repository.
 
 
-## Deployment - complete
+## Deployment
 The site was deployed to GitHub Pages. Please follow the steps below to deploy:
 * Go to Github repo > "Settings" > "Code and automation" > "Pages" > "Source" to be set to 'Deploy from Branch' > "Main branch" to be selected > "folder" set to root 
 * Click "Save"
 * Wait until you can see a link for deployed page within Github Page section, this can take a while. In the 'Environments' section then click "View Deployment. The URL will look similar to my website below.
 
-https://safiaj.github.io/Crime-Show-Quiz/
+![Website-Link]
 
-## Technologies Used - complete
+## Technologies Used
 * Favicon.io - used to create favicon for the page
 * Visual Studio Code - used to develop the website
 * Github - used to host source code and deploy on Github Pages
@@ -117,7 +147,7 @@ https://safiaj.github.io/Crime-Show-Quiz/
 * Site24x7 - used for checking JS for errors
 * Funtrivia. com - used to pull quiz data from, signposted within code.
 
-## Credits - complete
+## Credits
 * Google fonts
 * pexels.com - for all open source images used.
 * W3C Validator - to check all code was correct.
