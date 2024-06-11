@@ -27,7 +27,7 @@ How is it useful for the intended users:
 3. The functionality that allows for feedback makes this a useful quiz as it not only tests users knowledge but users are also able to learn more about these shows as they go through the quiz.
 
 
-![mockup]
+![mockup] 
 
 ## FEATURES
 
@@ -35,15 +35,22 @@ In this section, you should go over the different parts of your project, and des
 
 
 ### Navigation Bar
-* There are two simple navigation options as you can see below. An option to start the quiz after reading the instructions, and once users start an option to go back to the instructions start page. 
+* There are simple navigation options as you can see below. 
+
+Option 1 - start the quiz after reading the instructions.
+Option 2 - go back to the instructions start page.
+Option 3 - submit answer.
+Option 4 - next question.
+Option 5 - go back to previous question.
 
 * These options will allow users to easily navigate fromm page to page across all devices without having to click the 'back' button on the browser. 
 
 
-![start-quiz-nav-bar]
-![go-back-to-instructions-page-nav-bar]
+![start-quiz-nav-bar] (assets/images/start-quiz-nav-bar.png)
+![go-back-to-instructions-page-nav-bar] (/workspace/Crime-Show-Quiz/assets/images/previous-question-nav-bar.png)
 ![submit-answer-nav-bar]
 ![next-question-nav-bar]
+![go-back-previous-question-nav-bar]
 
 ### Introduction Page
 * The landing page includes an overlay of a typical CSI:Miami lab based background with a green instructions container overlay. This allows users to connect the quiz to typical crime shows with the aim of creating an enhanced UX as they connect the colour scheme and fonts chosen to various popular crime shows. 
