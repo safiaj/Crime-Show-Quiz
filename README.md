@@ -140,7 +140,7 @@ The site was deployed to GitHub Pages. Please follow the steps below to deploy:
 * Click "Save"
 * Wait until you can see a link for deployed page within Github Page section, this can take a while. In the 'Environments' section then click "View Deployment. The URL will look similar to my website below.
 
-![Website-Link]
+Website Link - (https://safiaj.github.io/Crime-Show-Quiz/)
 
 ## Technologies Used
 * Favicon.io - used to create favicon for the page
